@@ -2,6 +2,7 @@
 
 # restriction personnels
 package-lock.json
+.htaccess
 
 # dependencies
 /node_modules
