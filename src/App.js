@@ -1,22 +1,49 @@
-// Import de react-app
-import React from 'react';
+import React from "react";
+import "./App.css";
 
-// Import react-router-dom
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
-// Import des pages
-import Home from './pages/Home';
-import AboutMe from './pages/AboutMe';
+// Import components
+import Navbar from "./components/Navbar";
+import Section from "./components/Section";
+import dummyText from "./components/DummyText";
 
 function App() {
-  return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/aboutme" component={AboutMe} />
-      </Switch>
-    </Router>
-  );
-}
+    return (
+      <div className="App">
+
+        <Navbar />
+
+        <Section
+          title="Hello, i'm"
+          subtitle="BeniDiego.js"
+          dark={true}
+          id="section1"
+        />
+        <Section
+          title="Portfolio"
+          subtitle={dummyText}
+          dark={false}
+          id="section2"
+        />
+        <Section
+          title="Langages"
+          subtitle={dummyText}
+          dark={true}
+          id="section3"
+        />
+        <Section
+          title="Compétences"
+          subtitle={dummyText}
+          dark={false}
+          id="section4"
+        />
+        <Section
+          title="Contact"
+          subtitle={dummyText}
+          dark={true}
+          id="section5"
+        />        
+      </div>
+    );
+  }
 
 export default App;
