@@ -13,7 +13,7 @@ export default function Home({ dark, id }) {
         <div className="home-left">
           <Tilt>
             <img
-              style={{ width: "450px", borderRadius: "30px", boxShadow: "2px 2px 10px #000000" }}
+              style={{ height: "450px", borderRadius: "30px", boxShadow: "2px 2px 10px #000000" }}
               src={LogoBeniDiego}
               alt="avatar"
             />
