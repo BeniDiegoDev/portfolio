@@ -13,17 +13,17 @@ export default function Home({ dark, id }) {
         <div className="home-left">
           <Tilt>
             <img
-              style={{ height: "450px", borderRadius: "30px", boxShadow: "2px 2px 10px #000000" }}
+              style={{ width: "80%", borderRadius: "30px", boxShadow: "2px 2px 10px #000000" }}
               src={LogoBeniDiego}
               alt="avatar"
             />
           </Tilt>
         </div>
 
-        <div className="home-pres">
+        <div className="home-right">
           <h1>
-            Bonjour et Bienvenue{" "}
-            <span className="wave" role="img" aria-labelledby="wave">
+            Bonjour {" "}
+            <span className="coucou" role="img" aria-labelledby="coucou">
               👋🏻
             </span>
           </h1>
