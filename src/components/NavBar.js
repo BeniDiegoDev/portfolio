@@ -1,21 +1,24 @@
 import React, { useState } from "react";
-import "../App.css";
 
 // Import Link from react-scroll
 import { Link } from "react-scroll";
 
 // Import fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown, faTimes } from '@fortawesome/free-solid-svg-icons'
 
 function Navbar() {
 
   const [isOpen, setIsOpen] = useState(false);
 
-    return (
+  return (
+    <div>
       <nav className="nav" id="navbar">
+
         <div className="nav-content">
+
           <ul className="nav-items">
+
             <li className="nav-item">
               <Link
                 activeClass="active"
@@ -28,7 +31,8 @@ function Navbar() {
                 BeniDiego.js
               </Link>
             </li>
-            <li className="nav-item , responsiveNav">
+
+            <li className="nav-item">
               <Link
                 activeClass="active"
                 to="section2"
@@ -37,10 +41,11 @@ function Navbar() {
                 offset={0}
                 duration={2000}
               >
-                Portfolio
+                Projets
               </Link>
             </li>
-            <li className="nav-item , responsiveNav">
+
+            <li className="nav-item">
               <Link
                 activeClass="active"
                 to="section3"
@@ -52,7 +57,8 @@ function Navbar() {
                 Langages
               </Link>
             </li>
-            <li className="nav-item , responsiveNav">
+
+            <li className="nav-item">
               <Link
                 activeClass="active"
                 to="section4"
@@ -61,10 +67,11 @@ function Navbar() {
                 offset={0}
                 duration={2000}
               >
-                Compétences
+                Expériences
               </Link>
             </li>
-            <li className="nav-item , responsiveNav">
+
+            <li className="nav-item">
               <Link
                 activeClass="active"
                 to="section5"
@@ -76,14 +83,126 @@ function Navbar() {
                 Contact
               </Link>
             </li>
-            <li className="nav-item , responsiveNavRetour" onClick={() => ((console.log(isOpen) , setIsOpen(!isOpen)) )}>
-                <FontAwesomeIcon className="iconNav" icon={faSignOutAlt} />
-            </li>
-          </ul>
-        </div>
-      </nav>
-    );
-  }
 
-  
+          </ul>
+
+        </div>
+
+      </nav>
+      {isOpen ?
+        <div className="burger-menu">
+          <nav className="nav-burger" id="navbar">
+
+            <div className="nav-content">
+
+              <ul className="nav-items">
+                <li className="responsiveNavRetour">
+                  <Link
+                    activeClass="active"
+                    to="section1"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={2000}
+                  >
+                    BeniDiego.js
+                  </Link>
+                </li>
+                <li className="responsiveNavRetour" onClick={() => ((console.log(isOpen), setIsOpen(!isOpen), console.log(isOpen)))}>
+                  <FontAwesomeIcon className="iconNav" icon={faTimes} />
+                </li>
+              </ul>
+            </div>
+
+            <div className="nav-items-burger">
+              <p className="responsiveNavRetour">
+                <Link
+                  className="text-nav"
+                  activeClass="active"
+                  to="section2"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={2000}
+                >
+                  Projets
+                </Link>
+              </p>
+
+              <p className="responsiveNavRetour">
+                <Link
+                  className="text-nav"
+                  activeClass="active"
+                  to="section3"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={2000}
+                >
+                  Langages
+                </Link>
+              </p>
+
+              <p className="responsiveNavRetour">
+                <Link
+                  className="text-nav"
+                  activeClass="active"
+                  to="section4"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={2000}
+                >
+                  Expériences
+                </Link>
+              </p>
+
+              <p className="responsiveNavRetour">
+                <Link
+                  className="text-nav"
+                  activeClass="active"
+                  to="section5"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={2000}
+                >
+                  Contact
+                </Link>
+              </p>
+            </div>
+          </nav>
+        </div>
+        :
+        <div>
+          <nav className="nav-burger" id="navbar">
+
+            <div className="nav-content">
+
+              <ul className="nav-items">
+                <li className="responsiveNavRetour">
+                  <Link
+                    activeClass="active"
+                    to="section1"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={2000}
+                  >
+                    BeniDiego.js
+                  </Link>
+                </li>
+                <li className="responsiveNavRetour" onClick={() => ((console.log(isOpen), setIsOpen(!isOpen), console.log(isOpen)))}>
+                  <FontAwesomeIcon className="iconNav" icon={faChevronDown} />
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      }
+    </div>
+  );
+}
+
+
 export default Navbar;

@@ -1,4 +1,6 @@
 import React from "react";
+
+// Import du CSS
 import "./App.css";
 
 // Import components
@@ -16,7 +18,7 @@ function App(props) {
           number="0" />
 
         <Section
-          title="Portfolio"
+          title="Projets"
           subtitle={dummyText}
           dark={false}
           id="section2"
@@ -32,7 +34,7 @@ function App(props) {
         />
 
         <Section
-          title="Compétences"
+          title="Expériences"
           subtitle={dummyText}
           dark={false}
           id="section4"
