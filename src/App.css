@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 
+html {
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+
 body {
   width: 100vw;
   height: 100vh;
@@ -36,7 +42,7 @@ ul {
 .nav {
   position: fixed;
   top: 0px;
-  width: 100%;
+  width: 100vw;
   height: 40px;
   z-index: 1000;
 }
@@ -176,7 +182,7 @@ ul {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 720px) {
   h1 {
     font-size: calc(0.8em + 1vw);
   }
@@ -191,8 +197,10 @@ ul {
     flex-direction: row;
     list-style: none;
     color: white;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0 auto;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   .responsiveNav {
@@ -201,7 +209,6 @@ ul {
 
   .responsiveNavRetour {
     text-align: center;
-    width: 100px;
   }
 
   .section {
@@ -229,18 +236,13 @@ ul {
   }
 
   .home-left {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    height: 250px;
+    width: 90%;
+    z-index: 0;
   }
 
   .home-right {
-    width: 100%;
-    height: 180px;
+    width: 80%;
     z-index: 500;
-    margin-left: 20%;
     text-shadow: #2c2c2c 2px 2px 2px;
   }
 
@@ -257,7 +259,7 @@ ul {
   }
 
   .nav-items-burger {
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -267,7 +269,7 @@ ul {
 
   .burger-nav {
     top: 0px;
-    width: 100%;
+    width: 100vw;
     height: 40px;
     z-index: 1000;
   }
@@ -277,7 +279,7 @@ ul {
     display: flex;
     flex-direction: column;
     top: 0px;
-    width: 100%;
+    width: 100vw;
     z-index: 1000;
   }
 
@@ -286,7 +288,7 @@ ul {
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 720px) {
   .responsiveNavRetour {
     display: none
   }

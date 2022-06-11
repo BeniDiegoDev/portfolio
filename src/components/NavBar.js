@@ -89,6 +89,7 @@ function Navbar() {
         </div>
 
       </nav>
+      
       {isOpen ?
         <div className="burger-menu">
           <nav className="nav-burger" id="navbar">
