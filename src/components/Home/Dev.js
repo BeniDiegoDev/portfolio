@@ -7,8 +7,11 @@ function Dev() {
     <Typewriter
       options={{
         strings: [
-          "Développeur Web Junior Full Stack JavaScript",
-          "Développeur Full Stack JavaScript",
+          "Développeur Full Stack",
+          "Développeur Front End",
+          "Développeur Web",
+          "Développeur Back End",
+          "Développeur Mobile",
         ],
         autoStart: true,
         loop: true,
