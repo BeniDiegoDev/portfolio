@@ -410,6 +410,7 @@ ul {
   }
 
   .home-right {
+    margin-top: 20px;
     width: 80%;
     z-index: 500;
     text-shadow: #2c2c2c 2px 2px 2px;
@@ -421,6 +422,17 @@ ul {
     background-color: rgba(44, 44, 44, 0.99);
     height: 100vh;
     width: 100vw;
+    animation: slide-down 0.5s ease-in-out;
+  }
+
+  @keyframes slide-down {
+    0% {
+      transform: translateY(-100%);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
   }
 
   .nav-item {
