@@ -10,6 +10,7 @@ function Dev() {
           "Développeur Full Stack",
           "Développeur Front End",
           "Développeur Web",
+          "Développeur Freelance",
           "Développeur Back End",
           "Développeur Mobile",
           "Développeur Junior",

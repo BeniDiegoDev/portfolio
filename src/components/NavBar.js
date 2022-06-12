@@ -15,11 +15,8 @@ function Navbar() {
   return (
     <div>
       <nav className="nav" id="navbar">
-
         <div className="nav-content">
-
           <ul className="nav-items">
-
             <li className="nav-item">
               <Link
                 activeClass="active"
@@ -32,7 +29,6 @@ function Navbar() {
                 BeniDiego.js
               </Link>
             </li>
-
             <li className="nav-item">
               <Link
                 activeClass="active"
@@ -45,7 +41,6 @@ function Navbar() {
                 Projets
               </Link>
             </li>
-
             <li className="nav-item">
               <Link
                 activeClass="active"
@@ -58,7 +53,6 @@ function Navbar() {
                 Langages
               </Link>
             </li>
-
             <li className="nav-item">
               <Link
                 activeClass="active"
@@ -71,7 +65,6 @@ function Navbar() {
                 Expériences
               </Link>
             </li>
-
             <li className="nav-item">
               <Link
                 activeClass="active"
@@ -84,32 +77,25 @@ function Navbar() {
                 Contact
               </Link>
             </li>
-
           </ul>
-
         </div>
-
       </nav>
-
       {isOpen ?
         <div className="burger-menu" onClick={() => setIsOpen(!isOpen)}>
           <nav className="nav-burger" id="navbar">
-
             <div className="nav-content">
-
               <ul className="nav-items">
                 <div className="responsiveNavRetour">
                 </div>
-                <li className="responsiveNavRetour" onClick={() => ((console.log(isOpen), setIsOpen(!isOpen), console.log(isOpen)))}>
+                <li className="responsiveNavRetour" onClick={() => setIsOpen(!isOpen)}>
                   <FontAwesomeIcon className="iconNav" icon={faTimes} />
                 </li>
               </ul>
             </div>
-
             <div className="nav-items-burger">
               <p className="responsiveNavRetour">
                 <Link
-                  onClick={() => (setIsOpen(!isOpen))}
+                  onClick={() => setIsOpen(!isOpen)}
                   activeClass="active"
                   to="section1"
                   spy={true}
@@ -120,10 +106,9 @@ function Navbar() {
                   BeniDiego.js
                 </Link>
               </p>
-
               <p className="responsiveNavRetour">
                 <Link
-                  onClick={() => (setIsOpen(!isOpen))}
+                  onClick={() => setIsOpen(!isOpen)}
                   className="text-nav"
                   activeClass="active"
                   to="section2"
@@ -135,10 +120,9 @@ function Navbar() {
                   Projets
                 </Link>
               </p>
-
               <p className="responsiveNavRetour">
                 <Link
-                  onClick={() => (setIsOpen(!isOpen))}
+                  onClick={() => setIsOpen(!isOpen)}
                   className="text-nav"
                   activeClass="active"
                   to="section3"
@@ -150,10 +134,9 @@ function Navbar() {
                   Langages
                 </Link>
               </p>
-
               <p className="responsiveNavRetour">
                 <Link
-                  onClick={() => (setIsOpen(!isOpen))}
+                  onClick={() => setIsOpen(!isOpen)}
                   className="text-nav"
                   activeClass="active"
                   to="section4"
@@ -165,10 +148,9 @@ function Navbar() {
                   Expériences
                 </Link>
               </p>
-
               <p className="responsiveNavRetour">
                 <Link
-                  onClick={() => (setIsOpen(!isOpen))}
+                  onClick={() => setIsOpen(!isOpen)}
                   className="text-nav"
                   activeClass="active"
                   to="section5"
@@ -182,20 +164,15 @@ function Navbar() {
               </p>
             </div>
             <div className="menu-svg">
-                <a className="svg-menu" href="https://github.com/BeniDiegoDev" target="_blank" rel="noreferrer"><GithubFilled  /></a>
-                <a className="svg-menu" href="https://www.linkedin.com/in/benjamin-d-onofrio-0850b5238/" target="_blank" rel="noreferrer"><LinkedinFilled style={{ marginLeft: '10px' }} /></a>
+              <a className="svg-menu" href="https://github.com/BeniDiegoDev" target="_blank" rel="noreferrer"><GithubFilled /></a>
+              <a className="svg-menu" href="https://www.linkedin.com/in/benjamin-d-onofrio-0850b5238/" target="_blank" rel="noreferrer"><LinkedinFilled style={{ marginLeft: '10px' }} /></a>
             </div>
           </nav>
-          
-          
-          
         </div>
         :
         <div>
           <nav className="nav-burger" id="navbar">
-
             <div className="nav-content">
-
               <ul className="nav-items">
                 <li className="responsiveNavRetour">
                   <Link
@@ -209,7 +186,7 @@ function Navbar() {
                     BeniDiego.js
                   </Link>
                 </li>
-                <li className="responsiveNavRetour" onClick={() => ((console.log(isOpen), setIsOpen(!isOpen), console.log(isOpen)))}>
+                <li className="responsiveNavRetour" onClick={() => setIsOpen(!isOpen)}>
                   <FontAwesomeIcon className="iconNav" icon={faChevronDown} />
                 </li>
               </ul>
