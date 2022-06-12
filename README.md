@@ -31,7 +31,7 @@ Cloner ce repo. Vous aurez besoin de `node.js` et `git` installé sur votre mach
 
 1. Installer : `npm install`
 
-2. Lancer: `npm start`
+2. Lancer : `npm start`
 
 Une page se lancera automatiquement
 
