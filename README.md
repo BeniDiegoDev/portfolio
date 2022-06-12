@@ -1,11 +1,7 @@
 <h2 align="center">
   Portfolio v0.5<br/>
-  <a href="http://benit.fr/" target="_blank">benit.fr</a>
+  Demo -> <a href="http://benit.fr/" target="_blank">benit.fr</a>
 </h2>
-<div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
-</div>
-
 <br/>
 
 ## Fait avec
