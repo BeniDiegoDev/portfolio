@@ -6,6 +6,7 @@ import { Link } from "react-scroll";
 // Import fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { GithubFilled, LinkedinFilled } from '@ant-design/icons';
 
 function Navbar() {
 
@@ -91,7 +92,7 @@ function Navbar() {
       </nav>
 
       {isOpen ?
-        <div className="burger-menu">
+        <div className="burger-menu" onClick={() => setIsOpen(!isOpen)}>
           <nav className="nav-burger" id="navbar">
 
             <div className="nav-content">
@@ -180,7 +181,14 @@ function Navbar() {
                 </Link>
               </p>
             </div>
+            <div className="menu-svg">
+                <a className="svg-menu" href="https://github.com/BeniDiegoDev" target="_blank" rel="noreferrer"><GithubFilled  /></a>
+                <a className="svg-menu" href="https://www.linkedin.com/in/benjamin-d-onofrio-0850b5238/" target="_blank" rel="noreferrer"><LinkedinFilled style={{ marginLeft: '10px' }} /></a>
+            </div>
           </nav>
+          
+          
+          
         </div>
         :
         <div>
