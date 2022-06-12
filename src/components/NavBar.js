@@ -99,6 +99,7 @@ function Navbar() {
               <ul className="nav-items">
                 <li className="responsiveNavRetour">
                   <Link
+                    onClick={() => (setIsOpen(!isOpen))}
                     activeClass="active"
                     to="section1"
                     spy={true}
@@ -118,6 +119,7 @@ function Navbar() {
             <div className="nav-items-burger">
               <p className="responsiveNavRetour">
                 <Link
+                  onClick={() => (setIsOpen(!isOpen))}
                   className="text-nav"
                   activeClass="active"
                   to="section2"
@@ -132,6 +134,7 @@ function Navbar() {
 
               <p className="responsiveNavRetour">
                 <Link
+                  onClick={() => (setIsOpen(!isOpen))}
                   className="text-nav"
                   activeClass="active"
                   to="section3"
@@ -146,6 +149,7 @@ function Navbar() {
 
               <p className="responsiveNavRetour">
                 <Link
+                  onClick={() => (setIsOpen(!isOpen))}
                   className="text-nav"
                   activeClass="active"
                   to="section4"
@@ -160,6 +164,7 @@ function Navbar() {
 
               <p className="responsiveNavRetour">
                 <Link
+                  onClick={() => (setIsOpen(!isOpen))}
                   className="text-nav"
                   activeClass="active"
                   to="section5"
