@@ -7,7 +7,7 @@ export default function Langages({ id }) {
     return (
         <div className="section-lang" id={id}>
             <div className="section-content-lang">
-                <h2>Langages & Outils</h2>
+                <h2 style={{ marginBottom: '40px'}}>Langages & Outils</h2>
                 <motion.div className="lang">
                     <motion.div
                         className="lang-item"

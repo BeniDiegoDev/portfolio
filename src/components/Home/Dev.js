@@ -12,11 +12,12 @@ function Dev() {
           "Développeur Web",
           "Développeur Back End",
           "Développeur Mobile",
+          "Développeur Junior",
         ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 50,
-        pauseFor: 1500,
+        deleteSpeed: 40,
+        pauseFor: 2000,
       }}
     />
   );
