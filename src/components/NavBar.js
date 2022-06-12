@@ -89,7 +89,7 @@ function Navbar() {
         </div>
 
       </nav>
-      
+
       {isOpen ?
         <div className="burger-menu">
           <nav className="nav-burger" id="navbar">
@@ -97,19 +97,8 @@ function Navbar() {
             <div className="nav-content">
 
               <ul className="nav-items">
-                <li className="responsiveNavRetour">
-                  <Link
-                    onClick={() => (setIsOpen(!isOpen))}
-                    activeClass="active"
-                    to="section1"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={2000}
-                  >
-                    BeniDiego.js
-                  </Link>
-                </li>
+                <div className="responsiveNavRetour">
+                </div>
                 <li className="responsiveNavRetour" onClick={() => ((console.log(isOpen), setIsOpen(!isOpen), console.log(isOpen)))}>
                   <FontAwesomeIcon className="iconNav" icon={faTimes} />
                 </li>
@@ -117,6 +106,20 @@ function Navbar() {
             </div>
 
             <div className="nav-items-burger">
+              <p className="responsiveNavRetour">
+                <Link
+                  onClick={() => (setIsOpen(!isOpen))}
+                  activeClass="active"
+                  to="section1"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={2000}
+                >
+                  BeniDiego.js
+                </Link>
+              </p>
+
               <p className="responsiveNavRetour">
                 <Link
                   onClick={() => (setIsOpen(!isOpen))}

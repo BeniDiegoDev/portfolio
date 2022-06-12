@@ -8,21 +8,23 @@ import Navbar from "./components/Navbar";
 import Section from "./components/Section";
 import Home from "./components/Home/Home";
 import dummyText from "./components/DummyText";
+import BottomBar from "./components/BottomBar";
 
 function App(props) {
   
   return (
     <div className="App">
       <Navbar />
-        <Home dark={true} id="section1"
-          number="0" />
+        <Home 
+          id="section1"
+          offset={0}
+          />
 
         <Section
           title="Projets"
           subtitle={dummyText}
           dark={false}
           id="section2"
-          number="1"
         />
 
         <Section
@@ -30,7 +32,6 @@ function App(props) {
           subtitle={dummyText}
           dark={true}
           id="section3"
-          number="2"
         />
 
         <Section
@@ -38,7 +39,6 @@ function App(props) {
           subtitle={dummyText}
           dark={false}
           id="section4"
-          number="3"
         />
 
         <Section
@@ -48,6 +48,8 @@ function App(props) {
           id="section5"
           number="4"
         />
+
+      <BottomBar />
     </div>
   );
 }
