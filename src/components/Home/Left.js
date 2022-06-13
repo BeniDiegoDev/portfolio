@@ -11,8 +11,8 @@ export default function Left() {
           tiltMaxAngleX="5"
           >
             <img
-              style={{ width: "70%", borderRadius: "30px", boxShadow: "2px 2px 10px #000000" }}
-              src="https://res.cloudinary.com/dktfcexev/image/upload/v1655051869/Portfolio/profil_xaxsno.png"
+              style={{ width: "90%", borderRadius: "30px", boxShadow: "2px 2px 10px #000000" }}
+              src="https://res.cloudinary.com/dktfcexev/image/upload/v1655094116/Portfolio/profil_qjxbie.png"
               alt="avatar"
             />
           </Tilt>

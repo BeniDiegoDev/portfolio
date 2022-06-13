@@ -15,17 +15,17 @@ export default function Contact({ id }) {
                 <div className="group-contact-svg">
                     <div style={{ marginTop: "15px" }}>
                         <a className="contact-svg" href="mailto:benidiegopro@gmail.com?subject=Contact depuis benit.fr 💻 - Prénom Nom - Objet de votre mail&body=N'oubliez pas de mettre votre message ⭐">
-                            <img style={{ height: "50px" }} src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/800px-Gmail_icon_%282020%29.svg.png" alt="Linked in" />
+                            <img style={{ height: "70px" }} src="https://res.cloudinary.com/dktfcexev/image/upload/v1655095018/Portfolio/gmail_ylmqcw.png" alt="Gmail" />
                         </a>
                     </div>
                     <div style={{ marginTop: "15px" }}>
                         <a className="contact-svg" href="https://www.linkedin.com/in/benjamin-d-onofrio-0850b5238/" target="_blank" rel="noreferrer" style={{ marginTop: '10px' }}>
-                            <img style={{ height: "50px" }} src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/2560px-LinkedIn_Logo.svg.png" alt="Linked in" />
+                            <img style={{ height: "70px" }} src="https://res.cloudinary.com/dktfcexev/image/upload/v1655095018/Portfolio/linkedin_s6md2b.png" alt="Linked in" />
                         </a>
                     </div>
                     <div style={{ marginTop: "15px" }}>
                         <a className="contact-svg" href="https://www.malt.fr/profile/benjamindonofrio" target="_blank" rel="noreferrer" style={{ marginTop: '10px' }}>
-                            <img style={{ height: "50px" }} src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Logo_Malt.svg/1200px-Logo_Malt.svg.png" alt="Malt" />
+                            <img style={{ height: "70px" }} src="https://res.cloudinary.com/dktfcexev/image/upload/v1655095018/Portfolio/malt_pd0err.png" alt="Malt" />
                         </a>
                     </div>
                 </div>

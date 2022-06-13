@@ -16,7 +16,8 @@ export default function Langages({ id }) {
                             key={index}
                             className="lang-item"
                             initial="hidden"
-                            whileInView={"visible"}
+                            whileInView="visible"
+                            viewport={{ once: true }}
                             variants={{
                                 visible: {
                                     y: 0,
@@ -25,7 +26,7 @@ export default function Langages({ id }) {
                                         type: "spring",
                                     },
                                 },
-                                hidden: { opacity: 1, y: 80 },
+                                hidden: { opacity: 0, y: 100 },
                             }}
                         >
                             <img alt="html" src={lang.src} className="lang-img" />

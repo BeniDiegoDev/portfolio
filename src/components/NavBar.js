@@ -20,7 +20,7 @@ function Navbar() {
           <ul className="nav-items">
             <li className="nav-item">
               <Link
-                activeClass="active"
+                // activeClass="active"
                 to="section1"
                 spy={true}
                 smooth={true}
@@ -32,7 +32,6 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                activeClass="active"
                 to="section2"
                 spy={true}
                 smooth={true}
@@ -44,7 +43,6 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                activeClass="active"
                 to="section3"
                 spy={true}
                 smooth={true}
@@ -56,7 +54,6 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                activeClass="active"
                 to="section4"
                 spy={true}
                 smooth={true}
@@ -68,11 +65,9 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                activeClass="active"
                 to="section5"
                 spy={true}
                 smooth={true}
-                offset={0}
                 duration={2000}
               >
                 Contact
@@ -97,7 +92,7 @@ function Navbar() {
               <p className="responsiveNavRetour">
                 <Link
                   onClick={() => setIsOpen(!isOpen)}
-                  activeClass="active"
+                  className="text-nav"
                   to="section1"
                   spy={true}
                   smooth={true}
@@ -111,7 +106,6 @@ function Navbar() {
                 <Link
                   onClick={() => setIsOpen(!isOpen)}
                   className="text-nav"
-                  activeClass="active"
                   to="section2"
                   spy={true}
                   smooth={true}
@@ -125,7 +119,6 @@ function Navbar() {
                 <Link
                   onClick={() => setIsOpen(!isOpen)}
                   className="text-nav"
-                  activeClass="active"
                   to="section3"
                   spy={true}
                   smooth={true}
@@ -139,7 +132,6 @@ function Navbar() {
                 <Link
                   onClick={() => setIsOpen(!isOpen)}
                   className="text-nav"
-                  activeClass="active"
                   to="section4"
                   spy={true}
                   smooth={true}
@@ -153,7 +145,6 @@ function Navbar() {
                 <Link
                   onClick={() => setIsOpen(!isOpen)}
                   className="text-nav"
-                  activeClass="active"
                   to="section5"
                   spy={true}
                   smooth={true}
@@ -177,7 +168,6 @@ function Navbar() {
               <ul className="nav-items">
                 <li className="responsiveNavRetour">
                   <Link
-                    activeClass="active"
                     to="section1"
                     spy={true}
                     smooth={true}

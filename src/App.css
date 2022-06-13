@@ -174,7 +174,8 @@ ul {
   color: white;
   display: flex;
   padding: 40px;
-  min-height: 90vh;
+  min-height: 20vh;
+  max-height: auto;
 }
 
 
@@ -203,7 +204,7 @@ ul {
   color: #2c2c2c;
   display: flex;
   padding: 40px;
-  min-height: 20vh;
+  min-height: 70vh;
   max-height: auto;
 }
 
@@ -348,18 +349,22 @@ ul {
 }
 
 .home-left {
+  margin-top: 20px;
   text-align: center;
   width: 40%;
 }
 
 .home-right {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   width: 40%;
 }
 
 .nav-item>.active {
-  border-bottom: 3px solid #bff000;
+  transition: ease-in-out 0.1s;
+  font-size: 20px;
+  color: #bff000;
 }
 
 .coucou {
@@ -417,12 +422,12 @@ ul {
 }
 
 .contact-svg {
-  display: flex;
-  flex-direction: row;
-  font-size: 20px;
-  text-decoration: none;
+  opacity: 0.5;
   margin: 0px;
-  color: rgba(191, 240, 0, 1);
+}
+
+.contact-svg:hover {
+  opacity: 1.0;
 }
 
 .lien-svg-bottom {
@@ -582,7 +587,7 @@ ul {
     width: 100%;
     z-index: 0;
     max-height: auto;
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
   .home-right {
