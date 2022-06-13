@@ -60,6 +60,7 @@ ul {
 .awssld__wrapper { /* taille de la vue scroll lat */
   min-width: 100vw;
   min-height: 100vh;
+  max-height: 100vh;
 }
 
 .awssld__content { /* contenu de la vue scroll lat */
