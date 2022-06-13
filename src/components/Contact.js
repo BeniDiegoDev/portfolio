@@ -20,8 +20,7 @@ export default function Contact({ id }) {
             </div>
             {isOpen ?
                 <div className="overlay-contact" >
-                    <form name="contact" method="POST" data-netlify="true" onSubmit="submit">
-                        <input type="hidden" name="form-name" value="contact" />
+                    <form>
                         <div className="form-group">
                             <label className="form-label" >Prénom :</label>
                             <input type="text" className="form-control" name="firstname" placeholder="Benjamin"/>
@@ -39,8 +38,9 @@ export default function Contact({ id }) {
                             <textarea className="form-text" name="message" rows="3" placeholder="Bonjour, je vous contact..."/>
                         </div>
                         <div className="form-but">
-                            <button className="form-buttonv" type="submit">Envoyer</button>
-                            <button className="form-button" type="toclose" onClick={() => setIsOpen(!isOpen)}>Fermer</button>
+                            {/* type="submit" */}
+                            <button className="form-buttonv" onClick={() => setIsOpen(!isOpen)}>Envoyer</button>
+                            <button className="form-button" onClick={() => setIsOpen(!isOpen)}>Fermer</button>
                         </div>
                     </form>
                 </div>
