@@ -13,7 +13,7 @@ import Langages from "./components/Langages";
 import LoadingScreen from "./components/LoadingScreen";
 import Projets from "./components/Projets";
 import Contact from "./components/Contact";
-import Experience from "./components/Experience";
+import Experiences from "./components/Experiences";
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -40,7 +40,7 @@ function App() {
           id="section3"
         />
 
-        <Experience
+        <Experiences
           id="section4"
         />
 
