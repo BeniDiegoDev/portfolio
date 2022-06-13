@@ -11,6 +11,7 @@ import { GithubFilled, LinkedinFilled } from '@ant-design/icons';
 function Navbar() {
 
   const [isOpen, setIsOpen] = useState(false);
+  
 
   return (
     <div>

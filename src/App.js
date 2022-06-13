@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { useMediaQuery } from 'react-responsive'
 
 // Import du CSS
 import "./App.css";
@@ -18,9 +17,6 @@ import Experience from "./components/Experience";
 
 function App() {
   const [loading, setLoading] = useState(true)
-
-  const isLittleH = useMediaQuery({ query: '(max-height: 500px)' })
-  const isLittleW = useMediaQuery({ query: '(max-width: 300px)' })
   
   useEffect(() => {
     setTimeout(() => setLoading(false), 1500)
@@ -29,7 +25,7 @@ function App() {
   return (
     <>
     {!loading ? (
-      !isLittleH && !isLittleW ? <div className="App">
+       <div className="App">
       <Navbar />
         <Home 
           id="section1"
@@ -54,14 +50,9 @@ function App() {
 
       <BottomBar />
     </div>
-    :
-    <div style={{ backgroundColor: '#2c2c2c', minWidht: '100vw', minHeight: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color: 'black'}}>
-      <h2 style={{ color: "#bff000" }}>Ecran trop petit</h2>
-      <p style={{ fontSize: "12px", color: "#bff000" }}>(Taille minimum requis 500 px x 300 px)</p>
-    </div>
     ) : (
-      <LoadingScreen />
-    )}
+       <LoadingScreen />
+     )}
     </>
   );
 }
