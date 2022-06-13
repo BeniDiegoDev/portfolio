@@ -7,18 +7,18 @@ function Dev() {
     <Typewriter
       options={{
         strings: [
-          "Développeur Full Stack",
-          "Développeur Front End",
-          "Développeur Web",
-          "Développeur Freelance",
-          "Développeur Back End",
-          "Développeur Mobile",
-          "Développeur Junior",
+          "Full Stack",
+          "Front End",
+          "Web",
+          "Freelance",
+          "Back End",
+          "Mobile",
+          "Junior",
         ],
         autoStart: true,
         loop: true,
         deleteSpeed: 40,
-        pauseFor: 2000,
+        pauseFor: 1500,
       }}
     />
   );

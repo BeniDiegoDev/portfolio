@@ -23,7 +23,7 @@ export default function Home() {
                     marginTop: 0
                 }}
             >
-                <Dev />
+                Développeur <span style={{marginLeft: '5px'}}><Dev/></span>
             </h2>
             <div className="group-svg">
                 <a className="lien-svg" href="https://github.com/BeniDiegoDev" target="_blank" rel="noreferrer"><GithubFilled  /></a>
