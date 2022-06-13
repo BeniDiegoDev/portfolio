@@ -24,7 +24,7 @@ function Navbar() {
                 to="section1"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-5}
                 duration={2000}
               >
                 BeniDiego.js

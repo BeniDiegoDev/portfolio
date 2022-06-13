@@ -73,9 +73,10 @@ ul {
   position: fixed;
   top: 0px;
   width: 100vw;
-  height: 56px;
+  height: 46px;
   z-index: 2000;
   background-color: #2c2c2c;
+  box-shadow: 0px 0px 10px black;
 }
 
 .nav-logo:hover {
@@ -98,6 +99,7 @@ ul {
   color: white;
   justify-content: center;
   margin: 0 auto;
+  margin-top: 5px;
 }
 
 .nav-item {
@@ -616,6 +618,7 @@ ul {
   }
 
   .home-right {
+    margin-top: 20px;
     width: 100%;
     z-index: 500;
     text-shadow: #2c2c2c 2px 2px 2px;
