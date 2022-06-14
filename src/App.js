@@ -32,11 +32,11 @@ function App() {
           offset={0}
           />
 
-        <Projets
+        <Langages
           id="section2"
         />
-
-        <Langages
+        
+        <Projets
           id="section3"
         />
 

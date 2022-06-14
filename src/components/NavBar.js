@@ -38,7 +38,7 @@ function Navbar() {
                 offset={0}
                 duration={2000}
               >
-                Projets
+                Langages & Outils
               </Link>
             </li>
             <li className="nav-item">
@@ -49,7 +49,7 @@ function Navbar() {
                 offset={0}
                 duration={2000}
               >
-                Langages
+                Projets
               </Link>
             </li>
             <li className="nav-item">
@@ -112,7 +112,7 @@ function Navbar() {
                   offset={0}
                   duration={2000}
                 >
-                  Projets
+                Langages & Outils
                 </Link>
               </p>
               <p className="responsiveNavRetour">
@@ -125,7 +125,7 @@ function Navbar() {
                   offset={0}
                   duration={2000}
                 >
-                  Langages
+                  Projets
                 </Link>
               </p>
               <p className="responsiveNavRetour">
