@@ -3,7 +3,7 @@ import React from "react";
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 
-import { GithubFilled } from '@ant-design/icons';
+import { GithubFilled, GlobalOutlined } from '@ant-design/icons';
 
 export default function Projets({ id }) {
     return (
@@ -40,7 +40,9 @@ export default function Projets({ id }) {
                             <p>La possibilité de réserver une prestation chez des prestatires partenaire.</p>
                             <p>La gestion de votre profil, de vos rendez-vous et bien plus encore !</p>
                         </div>
-                        <p style={{ textAlign: 'center', marginTop:"25px"}}><a className="lien-finded" href="https://github.com/BeniDiegoDev/finded" target="_blank" rel="noreferrer">Lien GitHub <GithubFilled/></a></p>
+                        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: "20px" }}>
+                            <p style={{ textAlign: 'center' }}><a className="lien-finded" href="https://github.com/BeniDiegoDev/finded" target="_blank" rel="noreferrer">GitHub <GithubFilled /></a></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -70,7 +72,10 @@ export default function Projets({ id }) {
                             <p>La possibilité de suivre mon parcours et mes projets</p>
                             <p>Il sert à avoir un aperçu de ce que je peux faire pour mes clients.</p>
                         </div>
-                        <p style={{ textAlign: 'center', marginTop:"25px"}}><a className="lien-portfolio" href="https://github.com/BeniDiegoDev/portfolio" target="_blank" rel="noreferrer">Lien GitHub <GithubFilled/></a></p>
+                        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: "20px" }}>
+                            <p style={{ textAlign: 'center' }}><a className="lien-portfolio" href="https://github.com/BeniDiegoDev/portfolio" target="_blank" rel="noreferrer">GitHub <GithubFilled /></a></p>
+                            <p style={{ textAlign: 'center', marginLeft: "10px" }}><a className="lien-portfolio" href="https://www.benit.fr" target="_blank" rel="noreferrer">Demo <GlobalOutlined /></a></p>
+                        </div>
                     </div>
                 </div>
             </div>

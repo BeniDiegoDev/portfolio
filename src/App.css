@@ -908,19 +908,23 @@ ul {
   }
 
   .finded-left {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    text-align: center;
     margin: 0 auto;
     padding-left: 0px;
+    margin-bottom: 20px;
   }
   
   .finded-right {
-    margin-top: 20px;
     width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 0 auto;
     padding-right: 0px;
   }
 
@@ -939,19 +943,17 @@ ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    text-align: center;
     margin: 0 auto;
     padding-left: 0px;
     margin-bottom: 20px;
   }
   
   .portfolio-right {
-    margin-top: 20px;
     width: 80%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
     padding-right: 0px;
   }
