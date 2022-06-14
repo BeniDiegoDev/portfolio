@@ -63,11 +63,12 @@ export default function Projets({ id }) {
                             <h5 className="pastille-portfolio">cPanel</h5>
                         </div>
                         <div style={{ backgroundColor: '#2c2c2c', color: "#bff000", fontWeight: 'bold', padding: '20px', paddingTop: '5px', paddingBottom: "5px", borderRadius: "20px", marginTop: "20px" }}>
-                            <p>Finded est une application qui vous sert à trouver des prestations autour de vous.</p>
-                            <p>Finded est développée en utilisant la méthode Agile.</p>
-                            <p>L'application utilise la géolocalisation, une map interactive, une barre de recherche.</p>
-                            <p>La possibilité de réserver une prestation chez des prestatires partenaire.</p>
-                            <p>La gestion de votre profil, de vos rendez-vous et bien plus encore !</p>
+                            <p>Mon portfolio sur lequel vous êtes actuellement.</p>
+                            <p>Ce portfolio a été réalisé en React JS.</p>
+                            <p>Il est fait en une seule page et 100 % responsive</p>
+                            <p>L'application utilise une partie de mes compétences en développement.</p>
+                            <p>La possibilité de suivre mon parcours et mes projets</p>
+                            <p>Il sert à avoir un aperçu de ce que je peux faire pour mes clients.</p>
                         </div>
                         <p style={{ textAlign: 'center', marginTop:"25px"}}><a className="lien-portfolio" href="https://github.com/BeniDiegoDev/portfolio" target="_blank" rel="noreferrer">Lien GitHub <GithubFilled/></a></p>
                     </div>
