@@ -36,7 +36,7 @@ export default function Projets({ id }) {
                             <p>La possibilité de reserver une prestation au choix selon le prestataire</p>
                             <p>Et la gestion de son profil, de ses rendez-vous et bien plus encore !</p>
                         </div>
-                        <p style={{ textAlign: 'center', marginTop:"25px"}}><a className="lien-finded" href="http://github.fr" target="_blank" rel="noreferrer">Lien GitHub <GithubFilled/></a></p>
+                        <p style={{ textAlign: 'center', marginTop:"25px"}}><a className="lien-finded" href="https://github.com/BeniDiegoDev/finded" target="_blank" rel="noreferrer">Lien GitHub <GithubFilled/></a></p>
                     </div>
                 </div>
             </div>
