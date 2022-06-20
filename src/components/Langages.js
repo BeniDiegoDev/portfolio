@@ -5,9 +5,9 @@ import TableauLang from "./TableauLang";
 import { motion } from "framer-motion";
 
 
-export default function Langages({ id }) {
+export default function Langages(id) {
     return (
-        <div className="section-lang" id={id}>
+        <div className="section-lang" id="section2">
             <div className="section-content-lang">
                 <h2 style={{ marginBottom: '40px' }}>Langages & Outils</h2>
                 <motion.div className="lang">

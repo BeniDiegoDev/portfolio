@@ -2,7 +2,7 @@ import React from "react";
 
 import { GithubFilled, LinkedinFilled } from '@ant-design/icons';
 
-export default function BottomBar({ title, subtitle, dark, id }) {
+export default function BottomBar(id) {
     return (
         <div className="section-bottom">
             <div className="bottom-bar" id={id}>

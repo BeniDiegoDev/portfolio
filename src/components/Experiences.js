@@ -6,9 +6,9 @@ import 'react-vertical-timeline-component/style.min.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRedo, faPaperPlane, faSeedling } from '@fortawesome/free-solid-svg-icons'
 
-export default function Experiences({ id }) {
+export default function Experiences(id) {
     return (
-        <div className="section-exp" id={id}>
+        <div className="section-exp" id='section4'>
             <div className="section-content-exp">
                 <h2 style={{ marginBottom: '25px', color: '#2c2c2c' }}>Experiences</h2>
                 <VerticalTimeline

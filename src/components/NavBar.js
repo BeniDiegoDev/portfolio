@@ -84,7 +84,7 @@ function Navbar() {
                 <div className="responsiveNavRetour">
                 </div>
                 <li className="responsiveNavRetour" onClick={() => setIsOpen(!isOpen)}>
-                  <FontAwesomeIcon className="iconNav" icon={faTimes} />
+                  <FontAwesomeIcon icon={faTimes} />
                 </li>
               </ul>
             </div>
@@ -178,7 +178,7 @@ function Navbar() {
                   </Link>
                 </li>
                 <li className="responsiveNavRetour" onClick={() => setIsOpen(!isOpen)}>
-                  <FontAwesomeIcon className="iconNav" icon={faChevronDown} />
+                  <FontAwesomeIcon icon={faChevronDown} />
                 </li>
               </ul>
             </div>

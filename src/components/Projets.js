@@ -5,14 +5,14 @@ import 'react-awesome-slider/dist/styles.css';
 
 import { GithubFilled, GlobalOutlined } from '@ant-design/icons';
 
-export default function Projets({ id }) {
+export default function Projets(id) {
     return (
         <AwesomeSlider
             bullets={false}
             organicArrows={true}
         >
             <div
-                id={id}
+                id="section3"
                 className="finded-container"
                 style={{ backgroundColor: '#3DA787', display: 'flex', flexDirection: 'column' }}
             >

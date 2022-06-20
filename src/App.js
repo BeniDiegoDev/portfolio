@@ -17,42 +17,31 @@ import Experiences from "./components/Experiences";
 
 function App() {
   const [loading, setLoading] = useState(true)
-  
+
   useEffect(() => {
     setTimeout(() => setLoading(false), 1500)
   }, [])
-  
+
   return (
     <>
-    {!loading ? (
-       <div className="App">
-      <Navbar />
-        <Home 
-          id="section1"
-          offset={0}
-          />
+      {!loading ? (
+        <div className="App">
+          <Navbar />
+          <Home />
 
-        <Langages
-          id="section2"
-        />
-        
-        <Projets
-          id="section3"
-        />
+          <Langages />
 
-        <Experiences
-          id="section4"
-        />
+          <Projets />
 
-        <Contact
-          id="section5"
-        />
+          <Experiences />
 
-      <BottomBar />
-    </div>
-    ) : (
-       <LoadingScreen />
-     )}
+          <Contact />
+
+          <BottomBar />
+        </div>
+      ) : (
+        <LoadingScreen />
+      )}
     </>
   );
 }

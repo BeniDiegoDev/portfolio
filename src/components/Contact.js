@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function Contact({ id }) {
+export default function Contact(id) {
 
 
     return (
-        <div className="section-contact" id={id}>
+        <div className="section-contact" id="section5">
             <div className="section-content-contact">
                 <h2 style={{ marginBottom: '25px' }}>Contact</h2>
                 <div className="contact-content">
