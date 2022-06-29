@@ -1,12 +1,12 @@
 <h2 align="center">
-  Portfolio v0.5<br/>
-  Demo -> <a href="http://benit.fr/" target="_blank">benit.fr</a>
+  Portfolio v1.0<br/>
+  Demo -> <a href="https://benit.fr/" target="_blank">benit.fr</a>
 </h2>
 <br/>
 
 ## Fait avec
 
-Mon portfolio <a href="http://benit.fr/" target="_blank">benit.fr</a> présente certains de mes projets GitHub ainsi que mon CV et mes Compétences Techniques.<br/>
+Mon portfolio <a href="https://benit.fr/" target="_blank">benit.fr</a> présente certains de mes projets GitHub ainsi que mon CV et mes Compétences Techniques.<br/>
 
 Ce projet a été construit en utilisant ces technologies :
 

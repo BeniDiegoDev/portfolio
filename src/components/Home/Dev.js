@@ -13,7 +13,6 @@ function Dev() {
           "Freelance",
           "Back End",
           "Mobile",
-          "Junior",
         ],
         autoStart: true,
         loop: true,
