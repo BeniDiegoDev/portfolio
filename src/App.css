@@ -362,6 +362,7 @@ ul {
   transition: ease-in-out 0.1s;
   transform: scale(1.2);
   color: #bff000;
+  cursor: default;
 }
 
 .home-left {
