@@ -44,10 +44,6 @@ h2:hover {
   cursor: default;
 }
 
-h3:hover {
-  cursor: default;
-}
-
 h5:hover {
   cursor: default;
 }
@@ -412,6 +408,23 @@ ul {
   color: rgba(191, 240, 0, 0.5);
 }
 
+.exp-lien {
+  text-decoration: none;
+  color: white;
+}
+
+.exp-lien:hover {
+  cursor: pointer;
+}
+
+.exp-lien-dark {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
+.exp-lien-dark:hover {
+  cursor: pointer;
+}
 
 .svg-menu {
   font-size: 40px;

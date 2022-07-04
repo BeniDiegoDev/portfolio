@@ -1,13 +1,9 @@
 import React, { useState, useEffect } from "react";
 
-// Import du CSS
 import "./App.css";
 
-// Import components
 import Navbar from "./components/Navbar";
-// import Section from "./components/Section";
 import Home from "./components/Home/Home";
-// import dummyText from "./components/DummyText";
 import BottomBar from "./components/BottomBar";
 import Langages from "./components/Langages";
 import LoadingScreen from "./components/LoadingScreen";
@@ -27,6 +23,7 @@ function App() {
       {!loading ? (
         <div className="App">
           <Navbar />
+
           <Home />
 
           <Langages />
