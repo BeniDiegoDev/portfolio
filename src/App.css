@@ -228,7 +228,22 @@ ul {
 .overlay-contact {
   z-index: 2000;
   position: fixed;
-  background-color: #2c2c2cee;
+  background-color: #2c2c2c;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+}
+
+
+.overlay-contact-success {
+  z-index: 2500;
+  position: fixed;
+  background-color: #2c2c2c;
   min-width: 100vw;
   min-height: 100vh;
   display: flex;

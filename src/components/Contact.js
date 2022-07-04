@@ -1,8 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-import { ImCross } from 'react-icons/im';
-
 export default function Contact(id) {
 
     const [isOpen, setIsOpen] = useState(false);
@@ -25,6 +23,11 @@ export default function Contact(id) {
                     setStatus('error');
                 });
     };
+
+    function Success() {
+        setIsOpen(!isOpen)
+        setStatus('')
+    }
 
     return (
         <div className="section-contact" id="section5">
@@ -91,7 +94,7 @@ export default function Contact(id) {
                         </div>
                         <div className="form-but">
                             {/* type="submit" */}
-                            <button className="form-buttonv" type="submit" >Envoyer</button>
+                            <button className="form-buttonv" type="submit">Envoyer</button>
                             <button className="form-button" onClick={() => setIsOpen(!isOpen)}>Fermer</button>
                         </div>
                     </form>
@@ -100,12 +103,12 @@ export default function Contact(id) {
                 <></>
             }
             {status === 'success' ?
-                <div className="overlay-contact">
+                <div className="overlay-contact-success">
                     <p>Envoyé avec succés !</p>
-                    <button className="form-button" onClick={() => (setIsOpen(!isOpen), setStatus(''))}>Fermer</button>
+                    <button className="form-button" onClick={() => Success()}>Fermer</button>
                 </div>
                 : status === 'error' ?
-                    <div className="overlay-contact">
+                    <div className="overlay-contact-success">
                         <p>Echec de l'envoi !</p>
                         <button className="form-button" onClick={() => setStatus('')}>Fermer</button>
                     </div>
