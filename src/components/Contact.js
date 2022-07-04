@@ -1,8 +1,30 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+
+import { ImCross } from 'react-icons/im';
 
 export default function Contact(id) {
 
     const [isOpen, setIsOpen] = useState(false);
+    const [status, setStatus] = useState('');
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_7sh2keb', 'template_oci76wq', form.current, 'qauWl7bpB16UBiQui')
+            .then(
+                (result) => {
+                    console.log(result.text);
+                    e.target.reset();
+                    setStatus('success');
+                },
+                (error) => {
+                    console.log(error.text);
+                    setStatus('error');
+                });
+    };
 
     return (
         <div className="section-contact" id="section5">
@@ -19,8 +41,8 @@ export default function Contact(id) {
                         <p>Sur <a style={{ color: '#bff000', textDecorationLine: 'none' }} href="https://www.malt.fr/profile/benjamindonofrio" target="_blank" rel="noreferrer">Malt</a></p>
                     </div>
                     <div className="group-contact-svg">
-                        <div  className="space-contact">
-                        <button className="form-buttonf" onClick={() => setIsOpen(!isOpen)}>Formulaire de contact</button>
+                        <div className="space-contact">
+                            <button className="form-buttonf" onClick={() => setIsOpen(!isOpen)}>Formulaire de contact</button>
                         </div>
                         <div className="space-contact">
                             <a className="contact-svg" href="mailto:benidiegopro@gmail.com?subject=Contact depuis benit.fr 💻 - Prénom Nom - Objet de votre mail&body=N'oubliez pas de mettre votre message ⭐">
@@ -42,32 +64,54 @@ export default function Contact(id) {
             </div>
             {isOpen ?
                 <div className="overlay-contact" >
-                    <form>
+                    <form ref={form} onSubmit={sendEmail}>
                         <div className="form-group">
                             <label className="form-label" >Prénom :</label>
-                            <input type="text" className="form-control" name="firstname" placeholder="Benjamin" />
+                            <input type="text" className="form-control" name="firstname" placeholder="Prénom" required />
                         </div>
                         <div className="form-group">
                             <label className="form-label" >Nom :</label>
-                            <input type="text" className="form-control" name="lastname" placeholder="D'ONOFRIO" />
+                            <input type="text" className="form-control" name="lastname" placeholder="Nom" required />
                         </div>
                         <div className="form-group">
                             <label className="form-label" >Adresse mail :</label>
-                            <input type="email" className="form-control" name="email" placeholder="benidiegopro@gmail.com" />
+                            <input type="email" className="form-control" name="email" placeholder="Adresse mail" required />
+                        </div>
+                        <div className="form-group">
+                            <label className="form-label" >Numéro de téléphone :</label>
+                            <input type="phone" className="form-control" name="phone" placeholder="Numéro de téléphone" required />
+                        </div>
+                        <div className="form-group">
+                            <label className="form-label" >Objet :</label>
+                            <input type="text" className="form-control" name="objet" placeholder="Objet" required />
                         </div>
                         <div className="form-group">
                             <label className="form-label" >Votre message :</label>
-                            <textarea className="form-text" name="message" rows="3" placeholder="Bonjour, je vous contact..." />
+                            <textarea className="form-text" name="message" rows="3" placeholder="Message" required />
                         </div>
                         <div className="form-but">
                             {/* type="submit" */}
-                            <button className="form-buttonv" onClick={() => setIsOpen(!isOpen)}>Envoyer</button>
+                            <button className="form-buttonv" type="submit" >Envoyer</button>
                             <button className="form-button" onClick={() => setIsOpen(!isOpen)}>Fermer</button>
                         </div>
                     </form>
                 </div>
                 :
                 <></>
+            }
+            {status === 'success' ?
+                <div className="overlay-contact">
+                    <p>Envoyé avec succés !</p>
+                    <button className="form-button" onClick={() => (setIsOpen(!isOpen), setStatus(''))}>Fermer</button>
+                </div>
+                : status === 'error' ?
+                    <div className="overlay-contact">
+                        <p>Echec de l'envoi !</p>
+                        <button className="form-button" onClick={() => setStatus('')}>Fermer</button>
+                    </div>
+                    :
+                    <>
+                    </>
             }
         </div>
     );
