@@ -1,7 +1,7 @@
 import React from "react";
 
 import Dev from "./Dev";
-import { GithubFilled, LinkedinFilled } from '@ant-design/icons';
+import { GithubFilled, LinkedinFilled, FileTextFilled } from '@ant-design/icons';
 
 export default function Home() {
     return (
@@ -26,7 +26,8 @@ export default function Home() {
             </h3>
             <h3 style={{ margin: 0 }}>Je suis disponible pour vous accompagnez dans vos projets de développement Web, pour cela n'hésitez pas à me contacter.</h3>
             <div className="group-svg">
-                <a className="lien-svg" href="https://github.com/BeniDiegoDev" target="_blank" rel="noreferrer"><GithubFilled  /></a>
+                <a className="lien-svg" href="/cv-benjamin-donofrio.pdf" download="/cv-benjamin-donofrio.pdf"><FileTextFilled /></a>
+                <a className="lien-svg" href="https://github.com/BeniDiegoDev" target="_blank" rel="noreferrer"><GithubFilled style={{ marginLeft: '10px' }} /></a>
                 <a className="lien-svg" href="https://www.linkedin.com/in/benjamin-d-onofrio-0850b5238/" target="_blank" rel="noreferrer"><LinkedinFilled style={{ marginLeft: '10px' }} /></a>
             </div>
         </div>
