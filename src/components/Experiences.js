@@ -4,7 +4,7 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faRedo, faPaperPlane, faSeedling } from '@fortawesome/free-solid-svg-icons'
+import { faRedo, faPaperPlane, faSeedling, faCameraRetro } from '@fortawesome/free-solid-svg-icons'
 
 export default function Experiences(id) {
     return (
@@ -21,7 +21,7 @@ export default function Experiences(id) {
                         date="07/2022"
                         dateClassName="date-left"
                         iconStyle={{ background: '#2c2c2c', color: 'white' }}
-                        icon={<FontAwesomeIcon className="icon-timeline-element" icon={faSeedling} />}
+                        icon={<FontAwesomeIcon className="icon-timeline-element" icon={faCameraRetro} />}
                     >
                         <h3 className="vertical-timeline-element-title">Réalisation d'un Portfolio en React</h3>
                         <a className="exp-lien" href="https://maximeturpault.benit.fr" target="_blank" rel="noreferrer"><h4 className="vertical-timeline-element-subtitle">Visible ici maximeturpault.benit.fr</h4></a>
