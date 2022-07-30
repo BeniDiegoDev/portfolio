@@ -26,7 +26,7 @@ export default function Experiences(id) {
                         <h3 className="vertical-timeline-element-title">Réalisation d'un Portfolio en React</h3>
                         <a className="exp-lien" href="https://maximeturpault.benit.fr" target="_blank" rel="noreferrer"><h4 className="vertical-timeline-element-subtitle">Visible ici maximeturpault.benit.fr</h4></a>
                         <p>
-                            Création et déployement du portfolio de Maxime Turpault. Projet Agile fait sur mesure et adapté au besoin du client.
+                            Création et déploiement du portfolio de Maxime Turpault. Projet Agile fait sur mesure et adapté aux besoins et demandes du client.
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
@@ -41,7 +41,7 @@ export default function Experiences(id) {
                         <a className="exp-lien-dark" href="https://benit.fr" target="_blank" rel="noreferrer"><h3 className="vertical-timeline-element-title">Lancement et création de BeniDiego.js</h3></a>
                         <h4 className="vertical-timeline-element-subtitle">Suresnes, FR</h4>
                         <p>
-                           BeniDiego.js est une société de développement Web et Mobile qui vous accompagnes dans vos projets. Réalisation de Portfolio, Site Web, Application Mobile, Back Office,...
+                           BeniDiego.js est une société de développement Web et Mobile qui vous accompagne dans vos projets. Réalisation de Portfolio, Site Web, Application Mobile, Back Office,...
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
@@ -56,7 +56,7 @@ export default function Experiences(id) {
                         <h3 className="vertical-timeline-element-title">Formation à La Capsule</h3>
                         <h4 className="vertical-timeline-element-subtitle">Paris, FR</h4>
                         <p>
-                            Bootcamp Développeur d'application Web & Mobile FullStack JavaScript de 10 semaines. Où j'ai validé mes compétences avec un Titre RNCP de niveau 6 (Chef de projet de développement d'applications Web & Mobile).
+                            Bootcamp Développeur d'application Web & Mobile FullStack JavaScript de 10 semaines où j'ai validé mes compétences avec un Titre RNCP de niveau 6 (Chef de projet de développement d'applications Web & Mobile).
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement

@@ -24,7 +24,7 @@ export default function Home() {
             >
                 Développeur <span style={{marginLeft: '5px'}}><Dev/></span>
             </h3>
-            <h3 style={{ margin: 0 }}>Je suis disponible pour vous accompagnez dans vos projets de développement Web, pour cela n'hésitez pas à me contacter.</h3>
+            <h3 style={{ margin: 0 }}>Je suis disponible pour vous accompagner dans vos projets de développement Web, pour cela n'hésitez pas à me contacter.</h3>
             <div className="group-svg">
                 <a className="lien-svg" href="/cv-benjamin-donofrio.pdf" download="/cv-benjamin-donofrio.pdf"><FileTextFilled /></a>
                 <a className="lien-svg" href="https://github.com/BeniDiegoDev" target="_blank" rel="noreferrer"><GithubFilled style={{ marginLeft: '10px' }} /></a>
