@@ -4,7 +4,7 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faRedo, faPaperPlane, faSeedling, faCameraRetro } from '@fortawesome/free-solid-svg-icons'
+import { faRedo, faPaperPlane, faSeedling, faCameraRetro, faTools } from '@fortawesome/free-solid-svg-icons'
 
 export default function Experiences(id) {
     return (
@@ -16,6 +16,21 @@ export default function Experiences(id) {
                 >
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
+                        contentStyle={{ background: '#bff000', color: '#2c2c2c', borderRadius: '20px', borderBottomWidth: '0' }}
+                        contentArrowStyle={{ borderRight: '7px solid  #bff000' }}
+                        date="07/2022"
+                        dateClassName="date-right"
+                        iconStyle={{ background: '#bff000', color: '#2c2c2c', boxShadow: '0 0 0 4px #2c2c2c' }}
+                        icon={<FontAwesomeIcon className="icon-timeline-element" icon={faTools} />}
+                    >
+                        <h3 className="vertical-timeline-element-title">Réalisation d'une API back office</h3>
+                        <a className="exp-lien-dark" href="https://backofficemaxime.herokuapp.com" target="_blank" rel="noreferrer"><h4 className="vertical-timeline-element-subtitle">Visible ici backofficemaxime.herokuapp.com</h4></a>
+                        <p>
+                            Création et déploiement de l'API back office pour le Portfolio de Maxime Turpault. ExpressJS & MongoDB
+                        </p>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--work"
                         contentStyle={{ background: '#2c2c2c', color: 'white', borderRadius: '20px' }}
                         contentArrowStyle={{ borderRight: '7px solid  #2c2c2c' }}
                         date="07/2022"
@@ -23,10 +38,10 @@ export default function Experiences(id) {
                         iconStyle={{ background: '#2c2c2c', color: 'white' }}
                         icon={<FontAwesomeIcon className="icon-timeline-element" icon={faCameraRetro} />}
                     >
-                        <h3 className="vertical-timeline-element-title">Réalisation d'un Portfolio en React</h3>
+                        <h3 className="vertical-timeline-element-title">Réalisation d'un Portfolio</h3>
                         <a className="exp-lien" href="https://maximeturpault.benit.fr" target="_blank" rel="noreferrer"><h4 className="vertical-timeline-element-subtitle">Visible ici maximeturpault.benit.fr</h4></a>
                         <p>
-                            Création et déploiement du portfolio de Maxime Turpault. Projet Agile fait sur mesure et adapté aux besoins et demandes du client.
+                            Création et déploiement du portfolio de Maxime Turpault. Projet Agile fait sur mesure et adapté aux besoins et demandes du client. ReactJS & Redux & EmailJS
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
@@ -41,7 +56,7 @@ export default function Experiences(id) {
                         <a className="exp-lien-dark" href="https://benit.fr" target="_blank" rel="noreferrer"><h3 className="vertical-timeline-element-title">Lancement et création de BeniDiego.js</h3></a>
                         <h4 className="vertical-timeline-element-subtitle">Suresnes, FR</h4>
                         <p>
-                           BeniDiego.js est une société de développement Web et Mobile qui vous accompagne dans vos projets. Réalisation de Portfolio, Site Web, Application Mobile, Back Office,...
+                            BeniDiego.js est une société de développement Web et Mobile qui vous accompagne dans vos projets. Réalisation de Portfolio, Site Web, Application Mobile, Back Office,...
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
