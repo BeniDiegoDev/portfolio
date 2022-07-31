@@ -67,7 +67,7 @@ export default function Contact(id) {
             </div>
             {isOpen ?
                 <div className="overlay-contact" >
-                    <form ref={form} onSubmit={sendEmail}>
+                    <form className="form-contact" ref={form} onSubmit={sendEmail}>
                         <div className="form-group">
                             <label className="form-label" >Prénom :</label>
                             <input type="text" className="form-control" name="firstname" placeholder="Prénom" required />
@@ -93,7 +93,6 @@ export default function Contact(id) {
                             <textarea className="form-text" name="message" rows="3" placeholder="Message" required />
                         </div>
                         <div className="form-but">
-                            {/* type="submit" */}
                             <button className="form-buttonv" type="submit">Envoyer</button>
                             <button className="form-button" onClick={() => setIsOpen(!isOpen)}>Fermer</button>
                         </div>

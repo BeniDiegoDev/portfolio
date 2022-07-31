@@ -234,7 +234,6 @@ ul {
   align-items: center;
   top: 0px;
   left: 0px;
-  overflow: auto;
 }
 
 
@@ -292,6 +291,15 @@ ul {
   align-items: center;
   text-align: center;
   margin: 0 auto;
+}
+
+.form-contact {
+  overflow: auto;
+  padding-bottom: 50px;
+}
+
+.form-contact::-webkit-scrollbar {
+  display: none;
 }
 
 .form-group {
