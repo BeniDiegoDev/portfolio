@@ -24,7 +24,7 @@ export default function Experiences(id) {
                         icon={<FontAwesomeIcon className="icon-timeline-element" icon={faTools} />}
                     >
                         <h3 className="vertical-timeline-element-title">Réalisation d'une API back office</h3>
-                        <a className="exp-lien-dark" href="https://backofficemaxime.herokuapp.com" target="_blank" rel="noreferrer"><h4 className="vertical-timeline-element-subtitle">Visible ici backofficemaxime.herokuapp.com</h4></a>
+                        <a className="exp-lien-dark" href="https://backofficemaxime.herokuapp.com" target="_blank" rel="noreferrer"><h4 className="vertical-timeline-element-subtitle">Visible ici</h4></a>
                         <p>
                             Création et déploiement de l'API back office pour le Portfolio de Maxime Turpault. ExpressJS & MongoDB
                         </p>
@@ -39,7 +39,7 @@ export default function Experiences(id) {
                         icon={<FontAwesomeIcon className="icon-timeline-element" icon={faCameraRetro} />}
                     >
                         <h3 className="vertical-timeline-element-title">Réalisation d'un Portfolio</h3>
-                        <a className="exp-lien" href="https://maximeturpault.benit.fr" target="_blank" rel="noreferrer"><h4 className="vertical-timeline-element-subtitle">Visible ici maximeturpault.benit.fr</h4></a>
+                        <a className="exp-lien" href="https://maximeturpault.benit.fr" target="_blank" rel="noreferrer"><h4 className="vertical-timeline-element-subtitle">Visible ici</h4></a>
                         <p>
                             Création et déploiement du portfolio de Maxime Turpault. Projet Agile fait sur mesure et adapté aux besoins et demandes du client. ReactJS & Redux & EmailJS
                         </p>
@@ -56,7 +56,7 @@ export default function Experiences(id) {
                         <a className="exp-lien-dark" href="https://benit.fr" target="_blank" rel="noreferrer"><h3 className="vertical-timeline-element-title">Lancement et création de BeniDiego.js</h3></a>
                         <h4 className="vertical-timeline-element-subtitle">Suresnes, FR</h4>
                         <p>
-                            BeniDiego.js est une société de développement Web et Mobile qui vous accompagne dans vos projets. Réalisation de Portfolio, Site Web, Application Mobile, Back Office,...
+                            BeniDiego.js, société de développement d'applications Web & Mobile qui vous accompagne dans vos projets de digitalisation.
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement

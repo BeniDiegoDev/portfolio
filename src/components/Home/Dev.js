@@ -7,12 +7,13 @@ function Dev() {
     <Typewriter
       options={{
         strings: [
-          "Full Stack",
-          "Front End",
+          "MERN Stack",
           "Web",
-          "Freelance",
-          "Back End",
           "Mobile",
+          "Full Stack",
+          "Back End",
+          "Front End",
+          "Freelance",
         ],
         autoStart: true,
         loop: true,
