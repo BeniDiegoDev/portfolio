@@ -2,7 +2,7 @@ import React from "react";
 
 import { motion } from "framer-motion";
 
-const LoadingScreen = () => {
+const LoadingScreenComponent = () => {
 
   const loadingContainer = {
     width: "4rem",
@@ -88,4 +88,4 @@ const LoadingScreen = () => {
   );
 };
 
-export default LoadingScreen;
+export default LoadingScreenComponent;

@@ -1,19 +1,17 @@
 <h2 align="center">
   Portfolio v1.0<br/>
-  Demo -> <a href="https://benit.fr/" target="_blank">benit.fr</a>
+  Demo -> <a href="https://www.benidiego.fr/" target="_blank">benidiego.fr</a>
 </h2>
 <br/>
 
 ## Fait avec
 
-Mon portfolio <a href="https://benit.fr/" target="_blank">benit.fr</a> présente certains de mes projets GitHub ainsi que mon CV et mes Compétences Techniques.<br/>
+Mon portfolio <a href="https://www.benidiego.fr/" target="_blank">benidiego.fr</a> présente certains de mes projets GitHub & GitLab, ainsi que mon CV et mes compétences techniques.<br/>
 
 Ce projet a été construit en utilisant ces technologies :
 
 - React.js
 - Node.js
-- CSS3
-- VsCode
 
 ## Features
 
@@ -25,7 +23,7 @@ Ce projet a été construit en utilisant ces technologies :
 
 ## Comment l'utiliser
 
-Cloner ce repo. Vous aurez besoin de `node.js` et `git` installé sur votre machine.
+Cloner ce repo. Vous aurez besoin de `node.js` et `git` installé sur votre ordinateur.
 
 ## Installation et Mise en place
 

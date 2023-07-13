@@ -1,23 +1,21 @@
 import React from "react";
-import "../App.css";
-import TableauLang from "./TableauLang";
-
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
+import {language} from "../assets/data/language";
 
 
-export default function Langages(id) {
+export default function LanguageComponent(id) {
     return (
         <div className="section-lang" id="section2">
             <div className="section-content-lang">
-                <h2 style={{ marginBottom: '40px' }}>Langages & Outils</h2>
+                <h2 style={{marginBottom: '40px'}}>Langages & Outils</h2>
                 <motion.div className="lang">
-                    {TableauLang.map((lang, index) => (
+                    {language.map((lang, index) => (
                         <motion.div
                             key={index}
                             className="lang-item"
                             initial="hidden"
                             whileInView="visible"
-                            viewport={{ once: true }}
+                            viewport={{once: true}}
                             variants={{
                                 visible: {
                                     y: 0,
@@ -26,10 +24,10 @@ export default function Langages(id) {
                                         type: "spring",
                                     },
                                 },
-                                hidden: { opacity: 0, y: 100 },
+                                hidden: {opacity: 0, y: 100},
                             }}
                         >
-                            <img alt="html" src={lang.src} className="lang-img" />
+                            <img alt="html" src={lang.src} className="lang-img"/>
                             <h3 className="lang-hover">{lang.name}</h3>
                         </motion.div>
                     ))}
