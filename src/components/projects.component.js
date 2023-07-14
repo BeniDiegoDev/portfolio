@@ -5,7 +5,7 @@ import {DoubleLeftOutlined, DoubleRightOutlined, GithubFilled, GlobalOutlined} f
 
 export default function ProjectsComponent(id) {
 
-    const [projet, setProjet] = useState('BeniDiego.js')
+    const [projet, setProjet] = useState("O'Jardin Secret")
 
     let projetView = projects.filter(item => item.name === projet).map((projet, index) => {
         let languages = projet.pastilles.map((pastille, index) => {
