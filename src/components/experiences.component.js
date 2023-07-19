@@ -44,7 +44,7 @@ export default function ExperiencesComponent(id) {
                             Actuellement en CDI chez Nutraveris / FoodChain ID, j'occupe un poste de développeur web
                             full stack, je m'occupe de la refonte complète d'une application interne web complexe en
                             Angular / NestJS, anciennement en JS Vanilla et AngularJS. L'application web sert à gérer
-                            une base de donnée très complète concernant le domaine initial de l'entreprise (laboratoire
+                            une base de données très complète concernant le domaine initial de l'entreprise (laboratoire
                             de R&D dans le complément alimentaire). L'application web est un outil interne à
                             l'entreprise que les différents pôles utilisent (scientifique, règlementaire, etc...)
                         </p>
@@ -66,9 +66,9 @@ export default function ExperiencesComponent(id) {
                             </h4>
                         </a>
                         <p>
-                            Création et déploiement du site web pour le restaurant O'Jardin Secret situé à Suresnes
-                            (92). Projet Agile fait sur mesure et adapté aux besoins et demandes du client. ReactJS &
-                            EmailJS & Material UI
+                            Création et déploiement d'un site web pour le restaurant O'Jardin Secret situé à Suresnes
+                            (92). Projet Agile fait sur mesure et adapté aux besoins et demandes du client. ReactJS,
+                            EmailJS & Material UI.
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
@@ -94,7 +94,7 @@ export default function ExperiencesComponent(id) {
                             <h4 className="vertical-timeline-element-subtitle">Visible ici</h4>
                         </a>
                         <p>
-                            Création et déploiement d'une API pour le Portfolio de Maxime Turpault. ExpressJS & MongoDB
+                            Création et déploiement d'une API pour le Portfolio de Maxime Turpault. ExpressJS & MongoDB.
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
@@ -115,7 +115,7 @@ export default function ExperiencesComponent(id) {
                         </a>
                         <p>
                             Création et déploiement du portfolio de Maxime Turpault. Projet Agile fait sur mesure et
-                            adapté aux besoins et demandes du client. ReactJS & Redux & EmailJS
+                            adapté aux besoins et demandes du client. ReactJS, Redux & EmailJS.
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
@@ -159,9 +159,8 @@ export default function ExperiencesComponent(id) {
                             Paris (75), FR
                         </h4>
                         <p>
-                            Bootcamp Développeur d'application Web & Mobile FullStack JavaScript de 10 semaines où j'ai
-                            validé mes compétences avec un Titre RNCP de niveau 6 (Chef de projet de développement
-                            d'applications Web & Mobile).
+                            Bootcamp pour devenir Chef de projet de développement d'applications Web & Mobile FullStack
+                            en JavaScript de 10 semaines où j'ai validé mes compétences avec un Titre RNCP de niveau 6.
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement

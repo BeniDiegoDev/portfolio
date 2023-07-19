@@ -37,7 +37,7 @@ export const projects = [
         pastilles: ['NodeJS', 'JavaScript', 'React'],
         desc: ["Portfolio réalisé sur mesure pour le client en React JS. Il est 100% responsive. Connecté à une API back office permettant au client de gérer en toute autonomie le contenu de son site."],
         url: 'https://www.maximeturpault.fr',
-        github: 'https://github.com/BeniDiegoDev/portfolio-maxime-turpault'
+        github: null
     },
     {
         previous: 'Portfolio de Maxime Turpault',
@@ -47,6 +47,6 @@ export const projects = [
         pastilles: ['NodeJS', 'ExpressJS', 'MongoDB', 'Mongoose', 'JavaScript'],
         desc: ["API back office réalisé sur mesure pour le client en ExpressJS. Lui permettant de gérer lui même le contenu de son portfolio"],
         url: 'https://admin.maximeturpault.fr',
-        github: 'https://github.com/BeniDiegoDev/back-office-maxime'
+        github: null
     },
 ]
