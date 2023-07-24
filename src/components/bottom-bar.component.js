@@ -15,7 +15,7 @@ export default function BottomBarComponent(id) {
                         <GithubFilled/>
                     </a>
                     <a className="lien-svg-bottom"
-                       href="https://gitlab.com/BenjaminFCID"
+                       href="https://gitlab.com/BeniDiegoJS"
                        target="_blank"
                        rel="noreferrer">
                         <GitlabFilled style={{marginLeft: '10px'}}/>

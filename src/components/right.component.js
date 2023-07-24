@@ -34,7 +34,7 @@ export default function RightComponent() {
                     <GithubFilled style={{marginLeft: '10px'}}/>
                 </a>
                 <a className="lien-svg"
-                   href="https://gitlab.com/BenjaminFCID"
+                   href="https://gitlab.com/BeniDiegoJS"
                    target="_blank"
                    rel="noreferrer">
                     <GitlabFilled style={{marginLeft: '10px'}}/>

@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import {Link} from "react-scroll";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faChevronDown, faTimes} from '@fortawesome/free-solid-svg-icons'
-import {GithubFilled, LinkedinFilled} from '@ant-design/icons';
+import {GithubFilled, GitlabFilled, LinkedinFilled} from '@ant-design/icons';
 
 export default function NavBarComponent() {
 
@@ -145,6 +145,12 @@ export default function NavBarComponent() {
                                target="_blank"
                                rel="noreferrer">
                                 <GithubFilled/>
+                            </a>
+                            <a className="svg-menu"
+                               href="https://gitlab.com/BeniDiegoJS"
+                               target="_blank"
+                               rel="noreferrer">
+                                <GitlabFilled style={{marginLeft: '10px'}}/>
                             </a>
                             <a className="svg-menu"
                                href="https://www.linkedin.com/in/benjamin-d-onofrio-0850b5238/"
